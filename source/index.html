@@ -15,16 +15,59 @@
       <use href="/__spritemap#sprite-user"></use>
     </svg>
     <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
-    <div data-test="programs">programs</div>
-    <div data-test="grant">grant</div>
-    <div data-test="news">news</div>
-    <div data-test="FAQ">FAQ</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="contacts">contacts</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
+    <section class="hero" data-test="hero">
+      <div class="hero__container container">
+        <div class="hero__top-wrapper">
+          <svg>
+            <use href="/__spritemap#sprite-user"></use>
+          </svg>
+          <div class="hero__navigation-wrapper">
+            <button class="hero__navigation-button">Меню</button>
+            <ul class="hero__navigation-list">
+              <li class="hero__navigation-item">
+                <a href="" class="hero__navigation-link">О проекте</a>
+              </li>
+              <li class="hero__navigation-item">
+                <a href="" class="hero__navigation-link">Программы</a>
+                <ul class="hero__navigation-sublist">
+                  <li class="hero__hero__navigaion-sublist">Стажировки</li>
+                  <li class="hero__hero__navigaion-sublist">Волонтёрство</li>
+                  <li class="hero__hero__navigaion-sublist">Учёба</li>
+                  <li class="hero__hero__navigaion-sublist">Религия</li>
+                </ul>
+              </li>
+              <li class="hero__navigation-item">
+                <a href="" class="hero__navigation-link">Как поехать</a>
+              </li>
+              <li class="hero__navigation-item">
+                <a href="" class="hero__navigation-link">Отзывы</a>
+              </li>
+              <li class="hero__navigation-item">
+                <a href="" class="hero__navigation-link">Новости</a>
+                <ul class="hero__navigation-sublist">
+                  <li class="hero__hero__navigaion-sublist">Стажировки</li>
+                  <li class="hero__hero__navigaion-sublist">Волонтёрство</li>
+                  <li class="hero__hero__navigaion-sublist">Учёба</li>
+                  <li class="hero__hero__navigaion-sublist">Религия</li>
+                </ul>
+              </li>
+              <li class="hero__navigation-item">
+                <a href="" class="hero__navigation-link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-test="about">about</section>
+    <section data-test="programs">programs</section>
+    <section data-test="grant">grant</section>
+    <section data-test="news">news</section>
+    <section data-test="FAQ">FAQ</section>
+    <section data-test="reviews">reviews</section>
+    <section data-test="contacts">contacts</section>
+    <section data-test="form">form</section>
+    <section data-test="footer">footer</section>
     <script type="module" src="js/main.js"></script>
   </body>
 
