@@ -1,4 +1,21 @@
-// Vendor
-// ---------------------------------
+// Common
 
-@import "vendor/normalize";
+@import "common/fonts.scss";
+@import "common/variables.scss";
+@import "common/global.scss";
+
+// Block
+
+@import "block/about.scss";
+@import "block/contacts.scss";
+@import "block/faq.scss";
+@import "block/footer.scss";
+@import "block/form.scss";
+@import "block/grant.scss";
+@import "block/hero.scss";
+@import "block/news-card.scss";
+@import "block/news.scss";
+@import "block/page-body.scss";
+@import "block/programs.scss";
+@import "block/reviews-card.scss";
+@import "block/reviews.scss";
