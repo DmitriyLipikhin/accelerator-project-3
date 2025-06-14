@@ -1,159 +1,159 @@
 .programs-card {
-    list-style-type: none;
-    position: relative;
+  list-style-type: none;
+  position: relative;
 }
 
 .programs-card::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(49, 109, 194, 0.2);
-    border-radius: 12px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(49, 109, 194, 0.2);
+  border-radius: 12px;
 }
 
 .programs-card__text-container {
-    position: absolute;
-    z-index: 1;
-    bottom: 18px;
-    left: 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 18px;
+  left: 10px;
 }
 
 .programs-card__title-wrapper {
-    background-color: #ffffff;
-    width: 270px;
-    min-height: 42px;
-    padding: 18px 35px 6px 18px;
-    --nb-h: 18px;
-    --nb-w: 100px;
-    --nb-r: 12px;
-    border-top-left-radius: 12px;
+  background-color: #ffffff;
+  width: 270px;
+  min-height: 42px;
+  padding: 18px 35px 6px 18px;
+  --nb-h: 18px;
+  --nb-w: 100px;
+  --nb-r: 12px;
+  border-top-left-radius: 12px;
 }
 
 .programs-card__title {
-    font-size: 16px;
-    line-height: 18px;
-    color: $secondary-color;
-    margin: 0;
-    font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $secondary-color;
+  margin: 0;
+  font-weight: 400;
 }
 
 .programs-card__description-wrapper {
-    background-color: #ffffff;
-    width: 270px;
-    min-height: 69px;
-    padding: 12px 18px 15px;
-    border-radius: 0 12px 12px;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
+  background-color: #ffffff;
+  width: 270px;
+  min-height: 69px;
+  padding: 12px 18px 15px;
+  border-radius: 0 12px 12px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
 
 .programs-card__text-container p {
-    font-size: 12px;
-    line-height: 14px;
-    margin: 0;
-    width: 175px;
+  font-size: 12px;
+  line-height: 14px;
+  margin: 0;
+  width: 175px;
 }
 
 .programs-card__button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .programs-card__button::after {
-    content: "";
-    display: block;
-    background-color: $secondary-color;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-}   
+  content: "";
+  display: block;
+  background-color: $secondary-color;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
 
 .programs-card__button::before {
-    display: block;
-    content: "";
-    background-color: #ffffff;
-    position: absolute;
-    right: 29px;
-    mask-image: url(/__spritemap#sprite-button-arrow-view);
-    width: 8px;
-    height: 8px;
+  display: block;
+  content: "";
+  background-color: #ffffff;
+  position: absolute;
+  right: 29px;
+  mask-image: url(/__spritemap#sprite-button-arrow-view);
+  width: 8px;
+  height: 8px;
 }
 
 @media (min-width: $tablet-width) {
-    .programs-card {
-        width: 324px;
-    }
+  .programs-card {
+    width: 324px;
+  }
 
-    .programs-card::after {
-        width: 324px;
-    }
+  .programs-card::after {
+    width: 324px;
+  }
 
-    .programs-card__text-container {
-        left: 20px;
-        bottom: 10px;
-    }
+  .programs-card__text-container {
+    left: 20px;
+    bottom: 10px;
+  }
 
-    .programs-card__title-wrapper {
-        width: 284px;
-        min-height: 38px;
-        --nb-h: 14px;
-        --nb-w: 87px;
-    }
+  .programs-card__title-wrapper {
+    width: 284px;
+    min-height: 38px;
+    --nb-h: 14px;
+    --nb-w: 87px;
+  }
 
-    .programs-card__title {
-        font-size: 20px;
-        line-height: 14px;
-    }
+  .programs-card__title {
+    font-size: 20px;
+    line-height: 14px;
+  }
 
-    .programs-card__description-wrapper {
-        width: 284px;
-        min-height: 87px;
-    }
+  .programs-card__description-wrapper {
+    width: 284px;
+    min-height: 87px;
+  }
 
-    .programs-card__description-wrapper p {
-        font-size: 14px;
-        line-height: 20px;
-        width: 196px;
-    }
+  .programs-card__description-wrapper p {
+    font-size: 14px;
+    line-height: 20px;
+    width: 196px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-    .programs-card::after {
-        width: 392px;
-    }
+  .programs-card::after {
+    width: 392px;
+  }
 
-    .programs-card__text-container {
-        left: 20px;
-        bottom: 17px;
-    }
+  .programs-card__text-container {
+    left: 20px;
+    bottom: 17px;
+  }
 
-    .programs-card__title-wrapper {
-        min-height: 41px;
-        width: 321px;
-        --nb-h: 17px;
-        --nb-w: 103px;
-    }
+  .programs-card__title-wrapper {
+    min-height: 41px;
+    width: 321px;
+    --nb-h: 17px;
+    --nb-w: 103px;
+  }
 
-    .programs-card__title {
-        font-size: 24px;
-        line-height: 17px;
-    }
+  .programs-card__title {
+    font-size: 24px;
+    line-height: 17px;
+  }
 
-    .programs-card__description-wrapper {
-        min-height: 82px;
-        width: 321px;
-        display: flex;
-        align-items: center;
-    }
+  .programs-card__description-wrapper {
+    min-height: 82px;
+    width: 321px;
+    display: flex;
+    align-items: center;
+  }
 
-    .programs-card__description-wrapper p {
-        line-height: 18px;
-        width: 233px;
-    }
+  .programs-card__description-wrapper p {
+    line-height: 18px;
+    width: 233px;
+  }
 }

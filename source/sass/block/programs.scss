@@ -1,147 +1,147 @@
 .programs__container {
-    padding: 55px 15px 50px;
-    position: relative;
+  padding: 55px 15px 50px;
+  position: relative;
 }
 
 .programs__title {
-    font-size: 20px;
-    color: $secondary-color;
-    margin: 0;
-    font-weight: 400;
-    margin-bottom: 35px;
+  font-size: 20px;
+  color: $secondary-color;
+  margin: 0;
+  font-weight: 400;
+  margin-bottom: 35px;
 }
 
 .programs__button {
-    mask-image: url(/__spritemap#sprite-button-arrow-view);
-    width: 8px;
-    height: 8px;
-    background-color: $secondary-color;
-    transform: rotate(45deg);   
-    mask-repeat: no-repeat;
-    border: none;
-    padding: 0;
-    position: absolute;
-    top: 61px;
-    right: 23px;
+  mask-image: url(/__spritemap#sprite-button-arrow-view);
+  width: 8px;
+  height: 8px;
+  background-color: $secondary-color;
+  transform: rotate(45deg);
+  mask-repeat: no-repeat;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 61px;
+  right: 23px;
 }
 
 .programs__button-left {
-    transform: rotate(225deg);
-    right: 51px;
+  transform: rotate(225deg);
+  right: 51px;
 }
 
 .programs__button:disabled {
-    background-color: #a9afb7;
+  background-color: #a9afb7;
 }
 
 .programs__slider-wrapper {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .programs__slider-list {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 30px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
 }
 
 .programs__slider-image {
-    border-radius: 12px;
-    display: block;
+  border-radius: 12px;
+  display: block;
 }
 
 .programs__button-all {
-    width: 205px;
-    height: 44px;
-    font-size: 12px;
-    line-height: 12px;
-    padding-left: 31px;
+  width: 205px;
+  height: 44px;
+  font-size: 12px;
+  line-height: 12px;
+  padding-left: 31px;
 }
 
 @media (min-width: $tablet-width) {
-    .programs__container {
-        padding: 53px 45px 82px;
-    }
+  .programs__container {
+    padding: 53px 45px 82px;
+  }
 
-    .programs__title {
-        font-size: 34px;
-        line-height: 50px;
-        margin-bottom: 43px;
-    }
+  .programs__title {
+    font-size: 34px;
+    line-height: 50px;
+    margin-bottom: 43px;
+  }
 
-    .programs__button {
-        bottom: 57px;
-        right: 53px;
-        top: unset;
-    }
+  .programs__button {
+    bottom: 57px;
+    right: 53px;
+    top: unset;
+  }
 
-    .programs__button-left {
-        right: 83px;
-    }
+  .programs__button-left {
+    right: 83px;
+  }
 
-    .programs__button-all {
-        position: absolute;
-        top: 50px;
-        right: 45px;
-        width: 234px;
-        font-size: 14px;
-        line-height: 14px;
-    }
+  .programs__button-all {
+    position: absolute;
+    top: 50px;
+    right: 45px;
+    width: 234px;
+    font-size: 14px;
+    line-height: 14px;
+  }
 
-    .programs__button-all::before {
-        right: 24px;
-    }
+  .programs__button-all::before {
+    right: 24px;
+  }
 
-    .programs__scrollbar {
-        background: rgba(49, 109, 194, 0.20);
-        max-width: 562px;
-        margin-left: 37px;
-        margin-bottom: 56px;
-        max-height: 2px;
-    }
+  .programs__scrollbar {
+    background: rgba(49, 109, 194, 0.20);
+    max-width: 562px;
+    margin-left: 37px;
+    margin-bottom: 56px;
+    max-height: 2px;
+  }
 
-    .programs__drag {
-        background-color: $secondary-color;
-        height: 100%;
-        width: 100%;
-        position: relative;
-        border-radius: 10px;
-        left: 0;
-        top: 0;
-    }
+  .programs__drag {
+    background-color: $secondary-color;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+    left: 0;
+    top: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
-    .programs__container {
-        padding: 65px 100px 92px;
-    }
+  .programs__container {
+    padding: 65px 100px 92px;
+  }
 
-    .programs__title {
-        font-size: 50px;
-        line-height: 50px;
-        margin-bottom: 45px;
-    }
+  .programs__title {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 45px;
+  }
 
-    .programs__slider-wrapper {
-        overflow: hidden;
-    }
+  .programs__slider-wrapper {
+    overflow: hidden;
+  }
 
-    .programs__button {
-        bottom: 67px;
-        right: 108px;
-    }
+  .programs__button {
+    bottom: 67px;
+    right: 108px;
+  }
 
-    .programs__button-left {
-        right: 138px;
-    }
+  .programs__button-left {
+    right: 138px;
+  }
 
-    .programs__button-all {
-        top: 62px;
-        right: 100px;
-    }
+  .programs__button-all {
+    top: 62px;
+    right: 100px;
+  }
 
-    .programs__scrollbar {
-        margin-left: 86px;
-        margin-bottom: 66px;
-        max-width: 1136px;
-    }
+  .programs__scrollbar {
+    margin-left: 86px;
+    margin-bottom: 66px;
+    max-width: 1136px;
+  }
 }
