@@ -1,0 +1,225 @@
+.grant__container {
+    padding: 70px 15px;
+    background-color: $secondary-color;
+}
+
+.grant__route-wrapper p {
+    margin-bottom: 30px;
+    color: #f0efe9;
+}
+
+.grant__route-wrapper::after{
+    display: block;
+    content: "";
+    background-image:
+    image-set(
+      "../../img/grant-mobile@1x.png" 1x type("image/png"),
+      "../../img/grant-mobile@2x.png" 2x type("image/png"),
+      "../../img/grant-mobile@1x.webp" 1x type("image/webp"),
+      "../../img/grant-mobile@2x.webp" 2x type("image/webp")
+    );
+    background-size: 290px 200px;
+    border-radius: 16px;
+    margin-bottom: 40px;
+    width: 290px;
+    height: 200px;
+    position: relative;
+}
+
+.grant__route-title {
+    font-size: 20px;
+    color: #f0efe9;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.grant__education-title {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0;
+    margin-bottom: 30px;    
+    color: #f0efe9;
+    font-weight: 400;
+}
+
+.grant__education-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding-left: 15px;
+}
+
+.grant__education-item {
+    list-style-type: none;
+    outline: 1px #f0efe9 solid; 
+    outline-offset: -1px;
+    padding: 25px 26px;
+    border-radius: 16px;
+    position: relative;
+}
+
+.grant__education-item::after {
+    width: 11px;
+    height: 18px;
+    content: attr(data-number);
+    display: block;
+    position: absolute;
+    top: 11px;
+    left: 2px;
+    transform: translate(-50%, -50%);
+    color: #f0efe9;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.grant__education-item::before {
+    background-color: $secondary-color;
+    width: 32px;
+    height: 32px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 11px;
+    left: -3px;
+    transform: translate(-50%, -50%);
+}
+
+.grant__education-text {
+    color: #f0efe9;
+    margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+    .grant__container {
+        padding: 100px 45px;
+    }
+
+    .grant__route-wrapper p {
+        font-size: 16px;
+        margin-bottom: 40px;
+        width: 498px;
+    }
+
+    .grant__route-title {
+        font-size: 34px;
+        line-height: 50px;
+        margin-bottom: 30px;
+    }
+
+    .grant__route-wrapper::after{
+        display: block;
+        content: "";
+        background-image:
+        image-set(
+          "../../img/grant-tablet@1x.png" 1x type("image/png"),
+          "../../img/grant-tablet@2x.png" 2x type("image/png"),
+          "../../img/grant-tablet@1x.webp" 1x type("image/webp"),
+          "../../img/grant-tablet@2x.webp" 2x type("image/webp")
+        );
+        background-size: 678px 375px;
+        border-radius: 16px;
+        margin-bottom: 50px;
+        width: 678px;
+        height: 375px;
+        position: relative;
+    }
+
+    .grant__education-title {
+        font-size: 28px;
+        line-height: 28px;
+        margin-bottom: 45px;
+    }
+
+    .grant__education-list {
+        flex-flow: row wrap;
+        column-gap: 48px;
+        row-gap: 25px;
+        padding-left: 20px;
+    }
+
+    .grant__education-item {
+        width: 305px;
+        padding: 31px 26px;
+    }
+
+    .grant__education-item::after {
+        font-size: 22px;
+        line-height: 22px;
+        top: 4px;
+        left: 1px;
+    }
+    
+    .grant__education-item::before {
+        width: 42px;
+        height: 42px;
+        top: 6px;
+        left: 1px;
+    }
+
+    .grant__education-text {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .grant__container {
+        padding: 120px 206px 119px 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .grant__route-wrapper p {
+        line-height: 26px;
+    }
+
+    .grant__route-wrapper::after{
+        display: block;
+        content: "";
+        background-image:
+        image-set(
+          "../../img/grant-desktop@1x.png" 1x type("image/png"),
+          "../../img/grant-desktop@2x.png" 2x type("image/png"),
+          "../../img/grant-desktop@1x.webp" 1x type("image/webp"),
+          "../../img/grant-desktop@2x.webp" 2x type("image/webp")
+        );
+        background-size: 498px 363px;
+        border-radius: 16px;
+        margin-bottom: 50px;
+        width: 498px;
+        height: 363px;
+        position: relative;
+    }
+
+    .grant__route-title {
+        font-size: 50px;
+    }
+
+    .grant__education {
+        width: 498px;
+        padding-top: 10px;
+    }
+
+    .grant__education-list {
+        flex-direction: column;
+        row-gap: 23px;
+    }
+
+    .grant__education-item {
+        width: 478px;
+    }
+
+    .grant__education-title {
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 55px;
+    }
+
+    .grant__education-text {
+        line-height: 26px;
+    }
+    
+}

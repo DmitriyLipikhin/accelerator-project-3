@@ -6,8 +6,15 @@
 
 // Block
 
+@import 'swiper/css/pagination';
+@import 'swiper/css/mousewheel';
+@import 'swiper/css';
+@import 'swiper/css/grid';
+@import 'swiper/css/scrollbar';
+@import "block/button.scss";    
 @import "block/about.scss";
 @import "block/contacts.scss";
+@import "block/container.scss";
 @import "block/faq.scss";
 @import "block/footer.scss";
 @import "block/form.scss";
@@ -17,5 +24,11 @@
 @import "block/news.scss";
 @import "block/page-body.scss";
 @import "block/programs.scss";
+@import "block/programs-card.scss";
 @import "block/reviews-card.scss";
 @import "block/reviews.scss";
+@import "block/visually-hidden.scss";
+
+// Vendor
+
+@import "vendor/nebo.css";

@@ -1,0 +1,53 @@
+.button {
+    min-width: 136px;
+    border-radius: 30px; 
+    outline: 1px $secondary-color solid; 
+    outline-offset: -1px;
+    background-color: #f0efe9;
+    border: none;
+    text-align: start;
+    padding-left: 21px;
+    padding-right: 5px;
+    font-family: $manrope;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    text-transform: uppercase;
+    color: $secondary-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.button::after {
+    content: "";
+    display: block;
+    background-color: $secondary-color;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+}   
+
+.button::before {
+    display: block;
+    content: "";
+    background-color: #ffffff;
+    position: absolute;
+    right: 18px;
+    mask-image: url(/__spritemap#sprite-button-arrow-view);
+    width: 8px;
+    height: 8px;
+}
+
+@media (min-width: $tablet-width) {
+    .button {
+        min-height: 56px;
+    }
+
+    .button::after {
+        width: 46px;
+        height: 46px;
+    }
+}
