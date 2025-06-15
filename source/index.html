@@ -677,7 +677,7 @@
     </section>
     <section class="faq" data-test="FAQ">
       <div class="faq__container">
-        <h2 class="faq__title"></h2>
+        <h2 class="faq__title">Вопросы и ответы</h2>
         <div class="faq__accordion-container">
           <ul class="faq__accordion-list">
             <li class="faq__accordion-item">
@@ -710,7 +710,7 @@
                 предусматривается определённая
                 доля личного участия.</p>
             </li>
-            <li class="faq__accordion-item">
+            <li class="faq__accordion-item faq__accordion-item--open">
               <div class="faq__accordion__top-wrapper">
                 <h3 class="faq__accordion-title">Как определяется
                   стоимость программы?</h3>
@@ -764,22 +764,18 @@
     </section>
     <section class="reviews" data-test="reviews">
       <div class="reviews__container">
-        <h2 class="reviews__title"></h2>
-        <div class="reviews__slider-container">
+        <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__slider-container" id="swiper-reviews">
           <button class="reviews__slider-button reviews__slider-button-left"><span class="visually-hidden">Пролистать влево</span></button>
           <button class="reviews__slider-button reviews__slider-button-right"><span class="visually-hidden">Пролистать вправо</span></button>
-          <ul class="reviews__slider-list">
-            <li class="reviews__slider-item reviews-card">
+          <ul class="reviews__slider-list swiper-wrapper">
+            <li class="reviews__slider-item reviews-card swiper-slide">
               <picture>
-                <source media="(min-width: 1440px)" type="image/webp" srcset="./img/news-desktop3@1x.webp, ./img/news-desktop3@2x.webp 2x" width="286" height="400">
-                <source media="(min-width: 768px)" type="image/webp" srcset="./img/news-tablet3@1x.webp, ./img/news-tablet3@2x.webp 2x" width="324" height="350">
-                <source type="image/webp" srcset="/source/img/news-mobile3@1x.webp, ./img/news-mobile3@2x.webp 2x" width="290" height="240">
-                <source media="(min-width: 1440px)" type="image/jpg" srcset="./img/news-desktop3@1x.jpg, ./img/news-desktop3@2x.jpg 2x" width="286" height="400">
-                <source media="(min-width: 768px)" type="image/jpg" srcset="./img/news-tablet3@1x.jpg, ./img/news-tablet3@2x.jpg 2x" width="324" height="350">
-                <img class="news-card__image nebo nebo--bl" src="./img/news-mobile3@1x.jpg" srcset="./img/news-mobile3@2x.jpg 2x" width="290" height="240" alt="Девушка с папками на фоне здания">
+                <source type="image/webp" srcset="./img/avatar@1x.webp, ./img/avatar@2x.webp 2x" width="60" height="60">
+                <img class="reviews-card__image" src="./img/avatar@1x.png" srcset="./img/avatar@2x.png 2x" width="60" height="60" alt="Аватар профиля">
               </picture>
-              <h3 class="reviews-card__name">Лола Алекс</h3>
-              <dl class="reviews__card-programm-date-wrapper">
+              <h3 class="reviews-card__name">Лола<br> Алекс</h3>
+              <dl class="reviews-card__programm-date-wrapper">
                 <dt class="reviews-card__programm">Программа</dt>
                 <dd class="reviews-card__programm-text">Masa Art Challenge</dd>
                 <dt class="reviews-card__date">Дата</dt>
@@ -799,12 +795,109 @@
                 за предоставленную
                 мне возможность.</p>
             </li>
-            <li class="reviews__slider-item reviews-card">
+            <li class="reviews__slider-item reviews-card swiper-slide">
               <picture>
-                <img>
+                <source type="image/webp" srcset="./img/avatar2@1x.webp, ./img/avatar2@2x.webp 2x" width="60" height="60">
+                <img class="reviews-card__image" src="./img/avatar2@1x.png" srcset="./img/avatar2@2x.png 2x" width="60" height="60" alt="Аватар профиля">
               </picture>
-              <h3 class="reviews-card__name">Давид Иванов</h3>
-              <dl class="reviews__card-programm-date-wrapper">
+              <h3 class="reviews-card__name">Давид<br> Иванов</h3>
+              <dl class="reviews-card__programm-date-wrapper">
+                <dt class="reviews-card__programm">Программа</dt>
+                <dd class="reviews-card__programm-text">Volunteer Chance</dd>
+                <dt class="reviews-card__date">Дата</dt>
+                <dd class="reviews-card__date-text">Лето 2022</dd>
+              </dl>
+              <p class="reviews-card__description--blue">Благодаря опыту стажировки я узнал
+                так много нового о себе и об окружающем
+                мире.</p>
+              <p>Каждый день был возможностью оказать ощутимое влияние
+                на жизнь других людей. Я бы очень рекомендовал
+                эту волонтёрскую программу всем, кто ищет значимый
+                и незабываемый опыт. Организация была на высшем уровне.
+                Для меня было честью быть частью такой удивительной
+                инициативы.</p>
+            </li>
+            <li class="reviews__slider-item reviews-card swiper-slide">
+              <picture>
+                <source type="image/webp" srcset="./img/avatar@1x.webp, ./img/avatar@2x.webp 2x" width="60" height="60">
+                <img class="reviews-card__image" src="./img/avatar@1x.png" srcset="./img/avatar@2x.png 2x" width="60" height="60" alt="Аватар профиля">
+              </picture>
+              <h3 class="reviews-card__name">Лола<br> Алекс</h3>
+              <dl class="reviews-card__programm-date-wrapper">
+                <dt class="reviews-card__programm">Программа</dt>
+                <dd class="reviews-card__programm-text">Masa Art Challenge</dd>
+                <dt class="reviews-card__date">Дата</dt>
+                <dd class="reviews-card__date-text">Осень 2022</dd>
+              </dl>
+              <p class="reviews-card__description--blue">Я могу с уверенностью сказать,
+                что это был один из самых
+                незабываемых опытов в жизни!</p>
+              <p>Я рекомендую программу
+                «Стажировка» всем студентам,
+                желающим получить незабываемые
+                впечатления. Сочетание
+                путешествий, общения и значимой
+                работы действительно отличает
+                её от других программ, и я чувствую
+                огромную благодарность
+                за предоставленную
+                мне возможность.</p>
+            </li>
+            <li class="reviews__slider-item reviews-card swiper-slide">
+              <picture>
+                <source type="image/webp" srcset="./img/avatar2@1x.webp, ./img/avatar2@2x.webp 2x" width="60" height="60">
+                <img class="reviews-card__image" src="./img/avatar2@1x.png" srcset="./img/avatar2@2x.png 2x" width="60" height="60" alt="Аватар профиля">
+              </picture>
+              <h3 class="reviews-card__name">Давид<br> Иванов</h3>
+              <dl class="reviews-card__programm-date-wrapper">
+                <dt class="reviews-card__programm">Программа</dt>
+                <dd class="reviews-card__programm-text">Volunteer Chance</dd>
+                <dt class="reviews-card__date">Дата</dt>
+                <dd class="reviews-card__date-text">Лето 2022</dd>
+              </dl>
+              <p class="reviews-card__description--blue">Благодаря опыту стажировки я узнал
+                так много нового о себе и об окружающем
+                мире.</p>
+              <p>Каждый день был возможностью оказать ощутимое влияние
+                на жизнь других людей. Я бы очень рекомендовал
+                эту волонтёрскую программу всем, кто ищет значимый
+                и незабываемый опыт. Организация была на высшем уровне.
+                Для меня было честью быть частью такой удивительной
+                инициативы.</p>
+            </li>
+            <li class="reviews__slider-item reviews-card swiper-slide">
+              <picture>
+                <source type="image/webp" srcset="./img/avatar@1x.webp, ./img/avatar@2x.webp 2x" width="60" height="60">
+                <img class="reviews-card__image" src="./img/avatar@1x.png" srcset="./img/avatar@2x.png 2x" width="60" height="60" alt="Аватар профиля">
+              </picture>
+              <h3 class="reviews-card__name">Лола<br> Алекс</h3>
+              <dl class="reviews-card__programm-date-wrapper">
+                <dt class="reviews-card__programm">Программа</dt>
+                <dd class="reviews-card__programm-text">Masa Art Challenge</dd>
+                <dt class="reviews-card__date">Дата</dt>
+                <dd class="reviews-card__date-text">Осень 2022</dd>
+              </dl>
+              <p class="reviews-card__description--blue">Я могу с уверенностью сказать,
+                что это был один из самых
+                незабываемых опытов в жизни!</p>
+              <p>Я рекомендую программу
+                «Стажировка» всем студентам,
+                желающим получить незабываемые
+                впечатления. Сочетание
+                путешествий, общения и значимой
+                работы действительно отличает
+                её от других программ, и я чувствую
+                огромную благодарность
+                за предоставленную
+                мне возможность.</p>
+            </li>
+            <li class="reviews__slider-item reviews-card swiper-slide">
+              <picture>
+                <source type="image/webp" srcset="./img/avatar2@1x.webp, ./img/avatar2@2x.webp 2x" width="60" height="60">
+                <img class="reviews-card__image" src="./img/avatar2@1x.png" srcset="./img/avatar2@2x.png 2x" width="60" height="60" alt="Аватар профиля">
+              </picture>
+              <h3 class="reviews-card__name">Давид<br> Иванов</h3>
+              <dl class="reviews-card__programm-date-wrapper">
                 <dt class="reviews-card__programm">Программа</dt>
                 <dd class="reviews-card__programm-text">Volunteer Chance</dd>
                 <dt class="reviews-card__date">Дата</dt>
@@ -821,6 +914,7 @@
                 инициативы.</p>
             </li>
           </ul>
+          <div class="reviews__scrollbar swiper-scrollbar"></div>
         </div>
       </div>
     </section>

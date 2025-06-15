@@ -8,3 +8,5 @@ import './swiper-programs.js';
 import './swiper-news-navigation.js';
 import './swiper-news.js';
 import './news-grid.js';
+import './faq-accordeon.js'
+import './swiper-reviews.js'

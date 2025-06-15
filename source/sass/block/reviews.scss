@@ -1,0 +1,120 @@
+.reviews__container {
+  padding: 55px 15px 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.reviews__title {
+  font-size: 20px;
+  font-weight: 400;
+  color: $secondary-color;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.reviews__slider-button {
+  mask-image: url(/__spritemap#sprite-button-arrow-view);
+  width: 8px;
+  height: 8px;
+  background-color: $secondary-color;
+  transform: rotate(45deg);
+  mask-repeat: no-repeat;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 61px;
+  right: 23px;
+}
+
+.reviews__slider-button-left {
+  transform: rotate(225deg);
+  right: 51px;
+}
+
+.reviews__slider-button:disabled {
+  background-color: #a9afb7;
+}
+
+.reviews__slider-list {
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__scrollbar {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__container {
+    padding: 50px 45px 112px;
+  }
+
+  .reviews__title {
+    font-size: 34px;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+
+  .reviews__slider-button {
+    bottom: 57px;
+    top: unset;
+    right: 53px;
+  }
+
+  .reviews__slider-button-left {
+    right: 83px;
+    bottom: 57px;
+  }
+
+  .reviews__scrollbar {
+    display: block;
+    background: rgba(49, 109, 194, 0.2);
+    max-width: 562px;
+    margin-left: 37px;
+    margin-bottom: 56px;
+    max-height: 2px;
+  }
+
+  .reviews__drag {
+    background-color: #316dc2;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+    left: 0;
+    top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__container {
+    padding: 65px 100px 122px;
+  }
+
+  .reviews__title {
+    font-size: 50px;
+    line-height: 50px;
+    margin-left: 3px;
+    margin-bottom: 45px;
+  }
+
+  .reviews__slider-container {
+    overflow: hidden;
+  }
+
+  .reviews__slider-button {
+    bottom: 67px;
+    right: 108px;
+  }
+
+  .reviews__slider-button-left {
+    right: 138px;
+    bottom: 66px;
+  }
+
+  .reviews__scrollbar {
+    max-width: 1137px;
+    margin-left: 85px;
+    margin-bottom: 66px;
+  }
+}
